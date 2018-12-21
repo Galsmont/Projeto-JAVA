@@ -33,7 +33,7 @@ public class Teste {
 		End1.setLogradouro("39");
 		End1.setNumero("39");
 		System.out.println(End1.toString());
-		
+
 		Notebook Note1 = new Notebook();
 		Note1.setDataCadastro("14/07");
 		Note1.setDescricao("algo");
@@ -43,7 +43,7 @@ public class Teste {
 		Note1.setNumeroNote(12345);
 		Note1.setPrecoUnitario(40);
 		System.out.println(Note1.toString());
-		
+
 		Notebook Note2 = new Notebook();
 		Note2.setDataCadastro("19/02");
 		Note2.setDescricao("algo");
@@ -53,7 +53,7 @@ public class Teste {
 		Note2.setNumeroNote(544333);
 		Note2.setPrecoUnitario(80);
 		System.out.println(Note2.toString());
-		
+
 		Notebook Note3 = new Notebook();
 		Note3.setDataCadastro("05/07");
 		Note3.setDescricao("algo");
@@ -63,7 +63,7 @@ public class Teste {
 		Note3.setNumeroNote(999948);
 		Note3.setPrecoUnitario(66);
 		System.out.println(Note3.toString());
-		
+
 		Pedido Pd1 = new Pedido();
 		Pd1.setDataEmissao("30/06");
 		Pd1.setFormaDePagamento("crédito");
@@ -71,7 +71,6 @@ public class Teste {
 		Pd1.setSituacao("pago");
 		Pd1.setValorTotal(20.00);
 		System.out.println(Pd1.toString());
-		
 
 	}
 

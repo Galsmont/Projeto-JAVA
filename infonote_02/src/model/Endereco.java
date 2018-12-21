@@ -107,13 +107,44 @@ public class Endereco {
 		this.cep = cep;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
 		return "Endereco [logradouro=" + logradouro + ", numero=" + numero + ", complemento=" + complemento
 				+ ", bairro=" + bairro + ", cidade=" + cidade + ", estado=" + estado + ", cep=" + cep + "]";
+
 	}
 
+	public Endereco() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Endereco(String logradouro, String numero, String complemento, String bairro, String cidade, String estado,
+			String cep) {
+		super();
+		this.logradouro = logradouro;
+		this.numero = numero;
+		this.complemento = complemento;
+		this.bairro = bairro;
+		this.cidade = cidade;
+		this.estado = estado;
+		this.cep = cep;
+	}
+
+	public void mostrar () {
+		//Mostrar usuário
+		System.out.println("Logradouro:" + this.logradouro);
+		System.out.println("Numero:" + this.numero);
+		System.out.println("Complemento:" + this.complemento);
+		System.out.println("Bairro:" + this.bairro);
+		System.out.println("Cidade:" + this.cidade);
+		System.out.println("Estado:" + this.estado);
+		System.out.println("Cep:" + this.cep);
+		
+	}
 }

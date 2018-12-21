@@ -77,4 +77,25 @@ public class Pedido {
 		this.situacao = situacao;
 	}
 
+	public Pedido() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Pedido(int numero, String dataEmissao, String formaDePagamento, double valorTotal, String situacao) {
+		super();
+		this.numero = numero;
+		this.dataEmissao = dataEmissao;
+		this.formaDePagamento = formaDePagamento;
+		this.valorTotal = valorTotal;
+		this.situacao = situacao;
+	}
+	public void mostrar () {
+		System.out.println("Numero:" + this.numero);
+		System.out.println("DataEmissao:" + this.dataEmissao);
+		System.out.println("FormaDePagamento:" + this.formaDePagamento);
+		System.out.println("ValorTotal:" + this.valorTotal);
+		System.out.println("Situacao:" + this.situacao);
+		
+	}
 }

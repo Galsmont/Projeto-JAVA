@@ -11,7 +11,9 @@ public class ItemDePedido {
 		return qtde;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
@@ -40,4 +42,21 @@ public class ItemDePedido {
 		this.subtotal = subtotal;
 	}
 
+	public ItemDePedido() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public ItemDePedido(int qtde, double subtotal) {
+		super();
+		this.qtde = qtde;
+		this.subtotal = subtotal;
+	}
+
+	public void mostrar () {
+		//Mostrar usuário
+		System.out.println("Qtde:" + this.qtde);
+		System.out.println("Subtotal:" + this.subtotal);
+		
+	}
 }
