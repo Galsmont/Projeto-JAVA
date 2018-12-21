@@ -40,7 +40,7 @@ public class InfoNote {
 		int opcao = SAIR;
 		do {
 			info.mostrarMenu();
-			opcao = Teclado.LerInt("Digite sua opção: ");
+			opcao = Teclado.lerInt("Digite sua opção: ");
 			
 			switch (opcao) {
 			case LOGIN:
@@ -86,7 +86,7 @@ public class InfoNote {
 			default:
 				System.out.println("Opção inválida!");
 			}
-			Teclado.LerTexto("Pressione uma tecla para continuar...");
+			Teclado.lerTexto("Pressione uma tecla para continuar...");
 		} while (opcao != SAIR);
 	}
 
@@ -131,8 +131,8 @@ public class InfoNote {
 
 	public void efetuarLogin() {
 		String login, senha;
-		login = Teclado.LerTexto("Digite o login: ");
-		senha = Teclado.LerTexto("Digite a senha: ");
+		login = Teclado.lerTexto("Digite o login: ");
+		senha = Teclado.lerTexto("Digite a senha: ");
 		if (clienteGlobal != null) {
 			logado = clienteGlobal.validarLogin(login, senha);
 			if (logado) {
@@ -158,8 +158,8 @@ public class InfoNote {
 		System.out.println(" InfoNote - Cadastro de Usuários. ");
 		System.out.println("=================================================");
 
-		String login = Teclado.LerTexto(" Login: ");
-		String senha = Teclado.LerTexto(" Senha: ");
+		String login = Teclado.lerTexto(" Login: ");
+		String senha = Teclado.lerTexto(" Senha: ");
 		int tipo = 1;
 		//int tipo = 0; // porque todo cliente é tipo zero
 		if (senha.equals("") || senha == null) {
@@ -168,20 +168,20 @@ public class InfoNote {
 		}
 
 		
-		String codigoCliente = Teclado.LerTexto("codigo cliente");
-		String nome = Teclado.LerTexto("Nome: ");
-		String email = Teclado.LerTexto("E-mail: ");
-		String telefone = Teclado.LerTexto("Telefone: ");
+		String codigoCliente = Teclado.lerTexto("codigo cliente");
+		String nome = Teclado.lerTexto("Nome: ");
+		String email = Teclado.lerTexto("E-mail: ");
+		String telefone = Teclado.lerTexto("Telefone: ");
 
 		// Endereco
-		String logradouro = Teclado.LerTexto("logradouro:");
-		String numero = Teclado.LerTexto("numero:");
-		String complemento = Teclado.LerTexto("complemento:");
-		String bairro = Teclado.LerTexto("bairro");
-		String cidade = Teclado.LerTexto("cidade");
-		String estado = Teclado.LerTexto("estado");
+		String logradouro = Teclado.lerTexto("logradouro:");
+		String numero = Teclado.lerTexto("numero:");
+		String complemento = Teclado.lerTexto("complemento:");
+		String bairro = Teclado.lerTexto("bairro");
+		String cidade = Teclado.lerTexto("cidade");
+		String estado = Teclado.lerTexto("estado");
 
-		String cep = Teclado.LerTexto("CEP: ");
+		String cep = Teclado.lerTexto("CEP: ");
 
 		usuario = UsuarioDAO.inserir(login, senha, tipo);
 		cliente = ClienteDAO.inserir(login, senha, tipo, codigoCliente, nome,
@@ -227,7 +227,7 @@ public class InfoNote {
 	@SuppressWarnings("unlikely-arg-type")
 	public void inserirNotebook() {
 		// Lê o notebook escolhido do teclado
-		String numeroNote = Teclado.LerTexto("Informe o número do notebook" + " para compra: ");
+		String numeroNote = Teclado.lerTexto("Informe o número do notebook" + " para compra: ");
 		// Cria pedido
 		if (pedido == null) {
 			pedido = new Pedido();

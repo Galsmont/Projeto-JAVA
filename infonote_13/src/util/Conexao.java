@@ -5,7 +5,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Conexao {
-
 	private String url; // Local do Banco de Dados.
 	private String driver; // Classe Java do Framework que foi baixado na web.
 	private String login; // Login do usuário no SGBD.
@@ -45,5 +44,4 @@ public class Conexao {
 	public String getSenha() {
 		return senha;
 	}
-
 }
